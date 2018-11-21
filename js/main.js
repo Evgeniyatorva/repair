@@ -53,3 +53,15 @@ for (i = 0; i < menuLink.length; i++) {
     }, 0);
   }
 }
+
+//ARROW
+$('#arrow').click(function() { 
+  $('body,html').animate({scrollTop:450},800); 
+});
+
+console.log($('#action').offset().top);
+//BUTTON
+$('#button').click(function() { 
+   var goTo = $('#action').offset().top;
+  $('body,html').animate({scrollTop: goTo - 70},800); 
+});
